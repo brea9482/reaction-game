@@ -39,10 +39,16 @@ document.getElementById('start').onclick = function() {
   makeBox();
   $(this).hide();
   $('#stop').fadeIn();
+  $('#reset').hide();
 };
 
 document.getElementById('stop').onclick = function() {
   $(this).hide();
-  $('#start').fadeIn();
   $('#box').hide();
+  $('#start').fadeIn();
+  $('#reset').fadeIn();
+};
+
+document.getElementById('reset').onclick = function() {
+  location.reload()
 };

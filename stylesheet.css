@@ -15,3 +15,18 @@
   margin-top: 10px;
   margin-left: 10px;
 }
+
+#start {
+  background-color: orange;
+}
+
+#stop {
+  display: none;
+  color: white;
+  background-color: #fe0101;
+}
+
+#reset {
+  background-color: #17bc01;
+  display: none;
+}
