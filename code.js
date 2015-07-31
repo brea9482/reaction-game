@@ -6,7 +6,7 @@ var bestTime = 100;
 
 function makeBox() {
   var time = Math.random() * 2000;
-  var top = Math.random() * 250;
+  var top = Math.random() * 200;
   var left = Math.random() * 800;
 
   setTimeout(function(){
@@ -35,4 +35,14 @@ document.getElementById("box").onclick = function() {
   makeBox();
 };
 
-makeBox();
+document.getElementById('start').onclick = function() {
+  makeBox();
+  $(this).hide();
+  $('#stop').fadeIn();
+};
+
+document.getElementById('stop').onclick = function() {
+  $(this).hide();
+  $('#start').fadeIn();
+  $('#box').hide();
+};
