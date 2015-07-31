@@ -1,0 +1,12 @@
+#box {
+  height: 250px;
+  width: 250px;
+  background-color: red;
+  display: none;
+  border-radius: 125px;
+}
+
+.well {
+  text-align: center;
+  margin-left: 13px;
+}
